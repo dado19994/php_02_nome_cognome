@@ -48,4 +48,23 @@ if ($conteggio_pari > 0) {
 } else {
     echo "Non ci sono numeri pari nell'array.";
 }
+
+//Esercizio 3
+// Ciclo da 1 a 100
+for ($i = 1; $i <= 100; $i++) {
+    if ($i % 3 == 0 && $i % 5 == 0) {
+        // Multiplo sia di 3 che di 5
+        echo "HACKADEMY\n";
+    } elseif ($i % 3 == 0) {
+        // Multiplo solo di 3
+        echo "PHP\n";
+    } elseif ($i % 5 == 0) {
+        // Multiplo solo di 5
+        echo "JAVASCRIPT\n";
+    } else {
+        // Numero normale
+        echo "$i\n";
+    }
+}
 ?>
+
