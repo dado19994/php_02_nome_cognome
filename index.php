@@ -23,4 +23,29 @@ $users = [
           echo "Buongiorno $name $surname .\n";
       }
   }
+
+
+//Esercizio 2
+// Array di numeri a scelta
+$numeri = [4, 7, 12, 9, 8, 15, 22, 3, 6];
+
+// Variabili per la somma e il conteggio 
+$somma_pari = 0;
+$conteggio_pari = 0;
+
+// Ciclo per trovare i numeri pari e calcolare la somma
+foreach ($numeri as $numero) {
+    if ($numero % 2 == 0) {  // Controllo se il numero è pari
+        $somma_pari += $numero;
+        $conteggio_pari++;
+    }
+}
+
+// Calcolo della media dei numeri pari
+if ($conteggio_pari > 0) {
+    $media_pari = $somma_pari / $conteggio_pari;
+    echo "La media dei numeri pari è: $media_pari";
+} else {
+    echo "Non ci sono numeri pari nell'array.";
+}
 ?>
